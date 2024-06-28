@@ -1,0 +1,119 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    display: flex; /* Para centralizar verticalmente */
+    justify-content: center; /* Para centralizar horizontalmente */
+    align-items: center; /* Para centralizar verticalmente */
+    height: 100vh; /* Para ocupar a altura total da viewport */
+}
+
+/* Container */
+.container {
+    width: 80%; /* Largura ajustável */
+    max-width: 800px; /* Tamanho máximo do container */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+header h2 {
+    font-size: 2em;
+    color: #0E151C;
+}
+
+/* Formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+}
+
+.btn-login,
+.btn-register {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-login {
+    background-color: #0E151C; /* Cor modificada para #0E151C */
+    color: #fff;
+}
+
+.btn-login:hover {
+    background-color: #1a2633; /* Tom mais escuro para hover */
+    transform: translateY(-3px);
+}
+
+.btn-register {
+    background-color: #0E151C;
+    color: #fff;
+}
+
+.btn-register:hover {
+    background-color: #1a2633;
+    transform: translateY(-3px);
+}
+
+/* Link para cadastro */
+.container p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container a {
+    color: #00106b;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
