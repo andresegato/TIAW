@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="cadastro-principal.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="Produtivify.png" alt="Logo Produtivify" class="logo">
+            <h2>Cadastro</h2>
+        </header>
+        <form id="userForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                <span id="nameError" class="error"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Seu email" required>
+                <span id="emailError" class="error"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Sua senha" required>
+                <span id="passwordError" class="error"></span>
+            </div>
+            
+            <button type="submit" class="btn-cadastrar">Cadastrar</button>
+
+            <div class="login-message">
+                <p>Já tem uma conta? <a href="login.html">Faça login aqui</a>.</p>
+            </div>
+        </form>
+
+        <div class="crud-buttons">
+            <!-- Botão para mostrar usuários -->
+            <button onclick="showUserTable()" id="showUsersBtn">Mostrar Usuários</button>
+        </div>
+
+        <!-- Tabela de usuários -->
+        <table id="userList" style="margin-top: 20px; display: none;">
+            <!-- Lista de usuários será exibida aqui -->
+        </table>
+
+        <!-- Div para exibir "Bem-vindo" após o cadastro -->
+        <div id="welcome" style="display: none;">
+            <p>Cadastro concluído com sucesso!</p>
+            <button onclick="goToLogin()">Ir para Login</button>
+        </div>
+    </div>
+
+    <script src="cadastro-principal.js"></script>
+</body>
+</html>
