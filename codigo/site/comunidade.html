@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtivify</title>
+    <link rel="stylesheet" href="../css/comunidade.css">
+</head>
+<body>
+    <header>
+        <img src="Produtivify.png" alt="Logo Produtivify" class="logo">
+        <h1>Produtivify</h1>
+        <p>Não Procrastine!</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="pagina-principal.html">Página Principal</a></li>
+            <li><a href="clima.html">Clima</a></li>
+            <li><a href="comunidade.html">Comunidade</a></li>
+            <li><a href="atv.html">Motivação</a></li>
+            <li><a href="painelControle.html">Painel de Controle</a></li>
+            <li><a href="tarefas.html">Gerenciar Tarefas</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Participe da Comunidade</h2>
+        <form id="postForm">
+            <div class="form-group">
+                <label for="usuario">Nome:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+            <button type="submit">Postar</button>
+        </form>
+        <h3>Postagens Recentes</h3>
+        <div id="posts"></div>
+    </div>
+    <script src="../js/comunidade.js"></script>
+</body>
+</html>

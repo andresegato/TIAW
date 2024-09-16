@@ -1,0 +1,33 @@
+<!DOCTYPE html>: Declaração do tipo de documento HTML5.
+
+<html lang="pt-br">: Elemento raiz do documento HTML com especificação da linguagem (português do Brasil).
+
+<head>: Contém metadados, incluindo o título da página e a referência ao arquivo CSS.
+
+<meta charset="UTF-8">: Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: Configura a viewport para dispositivos móveis.
+
+<title>Produtivify</title>: Define o título da página.
+
+<link rel="stylesheet" href="styles.css">: Importa o arquivo CSS externo para estilizar a página.
+
+<body>: Contém o conteúdo visível da página.
+
+<header>: Cabeçalho da página, apresentando o título e a barra de navegação.
+
+<nav>: Navegação com links âncora para seções da página.
+
+<section id="home" class="section">: Seção inicial da página com o ID "home".
+
+<h2>Bem-vindo ao Produtivify!</h2>: Título acolhedor para a seção inicial.
+
+<form action="cadastro.php" method="post">: Formulário de cadastro com ação para "cadastro.php" usando o método POST.
+
+<input type="text" id="nome" name="nome" required>: Campo de texto para inserir o nome do usuário.
+
+<input type="email" id="email" name="email" required>: Campo de texto para inserir o email do usuário (com validação de email).
+
+<button type="submit">Cadastrar</button>: Botão para submeter o formulário de cadastro.
+
+<footer>: Rodapé da página, contendo informações sobre os desenvolvedores.

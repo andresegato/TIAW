@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="../css/perfil.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="Produtivify.png" alt="Logo Produtivify" class="logo">
+            <h1>Perfil do Usuário</h1>
+            <p>Não Procrastine!</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="pagina-principal.html">Página Principal</a></li>
+                <li><a href="clima.html">Clima</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="atv.html">Motivação</a></li>
+                <li><a href="painelControle.html">Painel de Controle</a></li>
+                <li><a href="tarefas.html">Gerenciar Tarefas</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="profile-container">
+            <div class="profile-header">
+                <input type="file" id="profile-pic-input" accept="image/*" hidden>
+                <img src="profile-pic.jpg" alt="Foto do Perfil" class="profile-pic" id="profile-pic">
+                <h2 class="username" id="username">Nome do Usuário</h2>
+                <button id="edit-name-btn">Editar Nome</button>
+                <div class="edit-section" id="edit-name-section" hidden>
+                    <input type="text" id="new-username" placeholder="Novo Nome">
+                    <button id="save-name-btn">Salvar</button>
+                </div>
+            </div>
+            <div class="profile-info">
+                <h2>Informações do Cadastro</h2>
+                <p>Email: <span id="user-email">usuario@example.com</span> <button id="edit-email-btn">Editar</button></p>
+                <div class="edit-section" id="edit-email-section" hidden>
+                    <input type="email" id="new-email" placeholder="Novo Email">
+                    <input type="password" id="current-password-email" placeholder="Senha Atual">
+                    <button id="save-email-btn">Salvar</button>
+                </div>
+                <p>Senha: ******** <button id="edit-password-btn">Editar</button></p>
+                <div class="edit-section" id="edit-password-section" hidden>
+                    <input type="password" id="current-password" placeholder="Senha Atual">
+                    <input type="password" id="new-password" placeholder="Nova Senha">
+                    <button id="save-password-btn">Salvar</button>
+                </div>
+            </div>
+            <button id="delete-account-btn" class="delete-account">Apagar Conta</button>
+        </div>
+    </main>
+    <script src="../js/perfil.js"></script>
+</body>
+</html>

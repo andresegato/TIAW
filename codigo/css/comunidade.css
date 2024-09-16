@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #B5BDC4; /* Texto cor #B5BDC4 */
+    background-color: #0E151C; /* Fundo cor #0E151C */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0E151C;
+    padding: 10px 20px;
+}
+
+header .logo {
+    width: 50px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #B5BDC4; /* Título cor #B5BDC4 */
+    flex-grow: 1;
+    text-align: center;
+}
+
+header p {
+    margin-left: auto;
+    color: #B5BDC4; /* Texto cor #B5BDC4 */
+}
+
+/* Navigation */
+nav {
+    background-color: #A4B1B9;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0E151C; /* Texto cor #0E151C */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #1C2A35; /* Fundo hover cor #1C2A35 */
+    color: #f5f5f5;
+    transform: scale(1.1); /* Aumenta ligeiramente no hover */
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1C2A35; /* Fundo cor #1C2A35 */
+    color: #B5BDC4; /* Texto cor #B5BDC4 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Formulário */
+h2 {
+    text-align: center;
+    color: #B5BDC4; /* Título cor #B5BDC4 */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #B5BDC4; /* Texto cor #B5BDC4 */
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #0E151C; /* Fundo input cor #0E151C */
+    color: #B5BDC4; /* Texto input cor #B5BDC4 */
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #0E151C; /* Fundo botão cor #0E151C */
+    color: #B5BDC4; /* Texto botão cor #B5BDC4 */
+    padding: 10px 20px;
+    border: 2px solid #B5BDC4; /* Borda botão cor #B5BDC4 */
+    border-radius: 50px; /* Borda arredondada */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    font-size: 1em;
+}
+
+button[type="submit"]:hover {
+    background-color: #B5BDC4; /* Fundo hover cor #B5BDC4 */
+    color: #0E151C; /* Texto hover cor #0E151C */
+    transform: scale(1.1); /* Aumenta ligeiramente no hover */
+}
+
+/* Postagens Recentes */
+h3 {
+    margin-top: 30px;
+    text-align: center;
+    color: #B5BDC4; /* Título cor #B5BDC4 */
+    margin-bottom: 20px;
+}
+
+#posts {
+    background-color: #1C2A35; /* Fundo posts cor #1C2A35 */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #B5BDC4; /* Texto posts cor #B5BDC4 */
+}

@@ -1,0 +1,29 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: PRODUTIVIFY
+authors:
+  - family-names: Ramos Oliveira
+    given-names: Thomás
+  - family-names: Henrique Ferraz Lima
+    given-names: Pedro
+  - family-names: Machado Vasconcelos
+    given-names: Pedro Afonso
+  - family-names: Oliveira Lanza
+    given-names: Pedro
+  - family-names: Segato Ribeiro
+    given-names: Andre Luiz
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Silva Tavares
+    given-names: Cleiton
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Augusto de Faria Barros
+    given-names: Diego
+keywords:
+  - Procastinação
+  - Gestão de tempo
+repository-code: https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010100-produtivify
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2024-07-02

@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600&display=swap');
+
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos gerais para o header */
+header {
+    color: #B5BDC4; /* Texto cor #B5BDC4 */
+    background-color: #0E151C; /* Fundo cor #0E151C */
+    padding: 10px; /* Espaçamento interno */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 130px;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24px;
+    color: #B5BDC4;
+}
+
+header p {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #A4B1B9;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaçamento horizontal entre os itens */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0E151C; /* Texto cor #0E151C */
+    font-weight: bold;
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1C2A35; /* Fundo mais escuro no hover */
+    color: #f5f5f5;
+    transform: scale(1.1); /* Aumenta ligeiramente no hover */
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    background-color: #f2f2f2; /* Fundo cinza claro */
+    padding: 20px;
+}
+
+p, h5 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para o calendário */
+.wraper {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #e0e0e0; /* Fundo cinza */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.days-week, .number-days {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc; /* Linha cinza */
+}
+
+.days-week span {
+    width: 14.2%;
+    font-size: 18px;
+    text-align: center;
+    color: #4caf50; /* Verde */
+}
+
+.number-days span {
+    width: 14.2%;
+    color: #555; /* Texto cinza */
+    margin: 8px 0;
+    text-align: center;
+}
+
+.mes-anterior {
+    opacity: 0.5;
+}
+
+.days-selected {
+    font-weight: bold; /* Texto em negrito para o dia selecionado */
+    text-decoration: underline;
+}
+
+#mes {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* CSS DO LOCAL STORAGE */
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 15px;
+    transition: transform 0.2s;
+}
+
+.task-item:hover {
+    transform: scale(1.02);
+}
+
+.task-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+}
+
+.task-description {
+    font-size: 1em;
+    color: #777;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o bloco de tarefas */
+.BlocodeTarefas {
+    background-color: #fff; /* Fundo branco */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
+    gap: 20px; /* Espaço entre os itens */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Borda cinza */
+}
+
+.card {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para o gráfico */
+#grafico {
+    max-width: 100%; /* Máximo de largura ajustado */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 60%; /* Reduzindo o tamanho máximo do gráfico */
+    margin: 0 auto; /* Centralizando o gráfico */
+}
+
+/* Estilos para botões e containers */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0E151C; /* Fundo cor #0E151C */
+    color: #B5BDC4; /* Texto cor #B5BDC4 */
+    text-decoration: none;
+    border: 2px solid #B5BDC4; /* Borda cor #B5BDC4 */
+    border-radius: 50px; /* Borda arredondada */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #B5BDC4; /* Fundo cor #B5BDC4 no hover */
+    color: #0E151C; /* Texto cor #0E151C no hover */
+    transform: scale(1.1); /* Aumenta ligeiramente no hover */
+}
+
+/* Estilos para o cronômetro */
+.app-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Fundo branco */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#timer-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#timer-display {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0E151C; /* Fundo cor #0E151C */
+    color: #B5BDC4; /* Texto cor #B5BDC4 */
+    border: 2px solid #B5BDC4; /* Borda cor #B5BDC4 */
+    border-radius: 50px; /* Borda arredondada */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+#botaoMelhorDia {
+    width: auto;
+    height: 70px;
+}
+
+.card-title {
+    width: auto;
+}
+
+button:hover {
+    background-color: #B5BDC4; /* Fundo cor #B5BDC4 no hover */
+    color: #0E151C; /* Texto cor #0E151C no hover */
+    transform: scale(1.1); /* Aumenta ligeiramente no hover */
+}
+
+#status-container {
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#status-texto {
+    font-size: 16px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0E151C;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}

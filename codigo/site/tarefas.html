@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtivify - Gerenciamento de Tarefas</title>
+    <link rel="stylesheet" href="../css/tarefas.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <img src="Produtivify.png" alt="Logo Produtivify" class="logo">
+        <h1>Produtivify</h1>
+        <p>Não Procrastine!</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="pagina-principal.html">Página Principal</a></li>
+            <li><a href="clima.html">Clima</a></li>
+            <li><a href="comunidade.html">Comunidade</a></li>
+            <li><a href="atv.html">Motivação</a></li>
+            <li><a href="painelControle.html">Painel de Controle</a></li>
+            <li><a href="tarefas.html">Gerenciar Tarefas</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main>
+            <div class="motivational-message">
+                <p>Mantenha-se focado e produtivo!</p>
+            </div>
+            <div class="task-slider">
+                <div class="slider-container">
+                    <div class="slider-item completed">
+                        <p></p>
+                        <span class="date"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-container">
+                <canvas id="progressChart" width="100" height="100"></canvas>
+            </div>
+            <div class="task-summary">
+                <p id="completionPercentage">0% das tarefas concluídas</p>
+            </div>
+            <input type="date" id="dateFilter" class="date-filter">
+            <ul id="taskList"></ul>
+            <div class="completed-tasks-container">
+                <h2>Tarefas Concluídas</h2>
+                <ul id="completedTaskList"></ul>
+            </div>
+            <div class="app-container">
+                <h2 id="pomodoroTexto">Estude com Pomodoro aqui:</h2>
+                <h1>Pomodoro Timer</h1>
+                <div id="timer-container">
+                    <div id="timer-display">25:00</div>
+                    <div id="controls">
+                        <button id="btn-iniciar">Iniciar</button>
+                        <button id="btn-pausar" disabled>Pausar</button>
+                        <button id="btn-finalizar" disabled>Finalizar</button>
+                    </div>
+                </div>
+                <div id="status-container">
+                    <h2>Status:</h2>
+                    <p id="status-texto">Pronto para iniciar</p>
+                </div>
+            </div>
+            <form id="task-form">
+                <div class="input-group">
+                    <input type="text" id="task-input" placeholder="Digite a sua tarefa..." required>
+                    <input type="text" id="task-desc" placeholder="Digite a descrição..." required>
+                    <button type="submit">Adicionar Tarefa</button>
+                </div>
+            </form>
+            <ul id="task-list"></ul>
+        </main>
+        <footer>
+            <p id="currentDate"></p>
+        </footer>
+    </div>
+    <script src="../js/realizacoes.js"></script>
+    <script src="../js/tarefas.js"></script>
+</body>
+</html>
